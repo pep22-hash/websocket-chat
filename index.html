@@ -72,7 +72,90 @@
       const messagesDiv = document.getElementById('messages');
       messagesDiv.innerHTML += `<p><strong>${mensaje}</strong></p>`;
     }
+    
   </script>
-
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  
+    h2 {
+      color: #5c6bc0;
+      margin-bottom: 20px;
+    }
+  
+    #messages {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 60%;
+      max-width: 600px;
+      height: 300px;
+      overflow-y: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+  
+    #messages p {
+      background-color: #e3f2fd;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px 0;
+      color: #333;
+    }
+  
+    input[type="text"] {
+      width: 60%;
+      max-width: 600px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  
+    button {
+      background-color: #5c6bc0;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #3949ab;
+    }
+  
+    #usernameInput {
+      margin-bottom: 20px;
+    }
+  
+    #messageInput {
+      margin-bottom: 20px;
+    }
+  
+    @media (max-width: 768px) {
+      #messages {
+        width: 80%;
+      }
+  
+      input[type="text"] {
+        width: 80%;
+      }
+    }
+  </style>
 </body>
 </html>
